@@ -55,15 +55,17 @@ function checkAllButtonsClicked() {
 }
 
 // hvis man klikker på arrowknappen, svømmer den færdig farvet fisk væk, og så fjernes arrowknappen også, så man kan starte forfra.
+// jeg bruger getComputedStyle fordi ellers ville min fisk uden farve ikke svømme ud af billdet. dette er fordi fish.style.display kigger efter inline styling og det er fisken uden farve ikke
 arrowButton.addEventListener("click", () => {
   arrowButton.style.display = "none";
-  const visibleFisk = document.querySelectorAll(".fisk");
-  visibleFisk.forEach((fisk) => {
-    if (fisk.style.display === "block") {
-      fisk.classList.add("move-right");
-      fisk.addEventListener("animationend", () => {
-        fisk.style.display = "none";
-        fisk.classList.remove("move-right");
+  const visibleFish = document.querySelectorAll(".fish");
+  visibleFish.forEach((fish) => {
+    const display = window.getComputedStyle(fish).display;
+    if (display === "block") {
+      fish.classList.add("move-right");
+      fish.addEventListener("animationend", () => {
+        fish.style.display = "none";
+        fish.classList.remove("move-right");
       });
     }
   });
