@@ -1,40 +1,41 @@
 "use strict";
 
 const pinkButton = document.querySelector(".pink-paint");
-const pinkFisk = document.querySelector(".pink-fisk");
+const pinkUsed = document.querySelector(".pink-used");
 const blueButton = document.querySelector(".blue-paint");
-const pinkOgBlaaFisk = document.querySelector(".pink-og-blaa-fisk");
-const darkPinkButton = document.querySelector(".dark-pink-paint");
-const doneFisk = document.querySelector(".done-fisk");
+const blueUsed = document.querySelector(".blue-used");
+const darkPinkUsed = document.querySelector(".dark-pink-used");
+const firstFishColored = document.querySelector(".first-fish-colored");
 const arrowButton = document.querySelector(".arrow");
+const darkPinkButton = document.querySelector(".dark-pink-paint");
 
 //Når man trykker på det på fisken der skal være pink farvet. også har jeg lavet sådan at man kan klikke den fra igen. (det er ikke en toggle, fordi jeg kunne ikke få den til at virke når jeg skulle bruge min function)
 pinkButton.addEventListener("click", () => {
-  if (pinkFisk.style.display === "block") {
-    pinkFisk.style.display = "none";
+  if (pinkUsed.style.display === "block") {
+    pinkUsed.style.display = "none";
   } else {
-    pinkFisk.style.display = "block";
+    pinkUsed.style.display = "block";
     checkAllButtonsClicked();
   }
 });
 
 //Samme som farven ovenover
 blueButton.addEventListener("click", () => {
-  if (pinkOgBlaaFisk.style.display === "block") {
-    pinkOgBlaaFisk.style.display = "none";
+  if (blueUsed.style.display === "block") {
+    blueUsed.style.display = "none";
   } else {
-    pinkOgBlaaFisk.style.display = "block";
+    blueUsed.style.display = "block";
     checkAllButtonsClicked();
   }
 });
 
 //Samme som farven ovenover
 darkPinkButton.addEventListener("click", () => {
-  if (doneFisk.style.display === "block") {
-    doneFisk.style.display = "none";
+  if (darkPinkUsed.style.display === "block") {
+    darkPinkUsed.style.display = "none";
     arrowButton.style.display = "none";
   } else {
-    doneFisk.style.display = "block";
+    darkPinkUsed.style.display = "block";
     checkAllButtonsClicked();
   }
 });
@@ -42,9 +43,9 @@ darkPinkButton.addEventListener("click", () => {
 //jeg laver en funktion som tjekker at mine 3 "paint knapper" er tjekket af før min arrow knap bliver vist. For det er først når alle 3 er aftrykket at fisken er færdig farvet.
 function checkAllButtonsClicked() {
   const allVisible =
-    pinkFisk.style.display === "block" &&
-    pinkOgBlaaFisk.style.display === "block" &&
-    doneFisk.style.display === "block";
+    pinkUsed.style.display === "block" &&
+    blueUsed.style.display === "block" &&
+    darkPinkUsed.style.display === "block";
 
   if (allVisible) {
     arrowButton.style.display = "block";

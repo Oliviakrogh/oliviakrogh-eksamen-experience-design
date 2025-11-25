@@ -13,33 +13,41 @@
 }
 
 /* Buttons */
+.paint-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 10;
+}
+
 .pink-paint,
 .blue-paint,
 .dark-pink-paint {
-  position: relative;
+  position: static;
   width: 150px;
   height: 150px;
-  margin-bottom: 20px;
   border: none;
   cursor: pointer;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  padding: 0;
   z-index: 10;
 }
 
 .blue-paint {
-  background-image: url("../img/blue-paint.png");
+  background-image: url("/img/blue-paint.png");
 }
 
 .dark-pink-paint {
-  background-image: url("../img/dark-pink-paint.png");
+  background-image: url("/img/dark-pink-paint.png");
 }
 
 .pink-paint {
-  background-image: url("../img/pink-paint.png");
+  background-image: url("/img/pink-paint.png");
 }
 
 /* Arrow når man er færdig */
@@ -79,10 +87,10 @@
 }
 
 /* Fisk */
-.fisk-uden-farve,
-.pink-fisk,
-.pink-og-blaa-fisk,
-.done-fisk {
+.first-fish-plain,
+.pink-used,
+.blue-used,
+.dark-pink-used {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -91,23 +99,23 @@
   transform: translateX(-50%);
 }
 
-.fisk-uden-farve {
+.first-fish-plain {
   z-index: 5;
   display: block;
 }
 
-.pink-fisk {
-  z-index: 15;
+.pink-used {
+  z-index: 10;
   display: none;
 }
 
-.pink-og-blaa-fisk {
-  z-index: 20;
+.blue-used {
+  z-index: 12;
   display: none;
 }
 
-.done-fisk {
-  z-index: 25;
+.dark-pink-used {
+  z-index: 11;
   display: none;
 }
 
