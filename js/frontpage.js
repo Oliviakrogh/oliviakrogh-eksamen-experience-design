@@ -8,15 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const findButton = document.querySelector(".find-fisken");
     const colorButton = document.querySelector(".color-fish");
 
-    vidensButton.addEventListener("click", () => {
-        window.location.href = "../videns-spil/index.viden.html";
-    });
-
-    findButton.addEventListener("click", () => {
-        window.location.href = "../find-fisk/index.find.html";
-    });
-
     colorButton.addEventListener("click", () => {
-        window.location.href = "../color-fish/index.color.html";
+        window.location.href = "colorfish.html";
     });
 });
