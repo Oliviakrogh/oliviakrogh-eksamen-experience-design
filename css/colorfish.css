@@ -159,10 +159,26 @@
 
 .seagrass-mini {
     position: absolute;
-    bottom: 8%;
-    right: 32%;
+    bottom: 5%;
+    right: 26%;
     z-index: 4;
     width: 40px;
+}
+
+.pink-seaweed {
+    position: absolute;
+    bottom: 5%;
+    right: 20%;
+    z-index: 3;
+    width: 120px;
+}
+
+.seagrass-big {
+    position: absolute;
+    bottom: 5%;
+    right: 16%;
+    z-index: 4;
+    width: 130px;
 }
 
 /* Fisk der svømmer rundt */
@@ -171,7 +187,7 @@
 .blue-used,
 .dark-pink-used {
   position: absolute;
-  top: 10%;
+  bottom: 10%;
   left: 50%;
   width: 40%;
   height: auto;
