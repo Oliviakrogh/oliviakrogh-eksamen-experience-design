@@ -176,6 +176,61 @@ position: relative;
     width: 45px;
 }
 
+.blue-ring {
+    position: absolute;
+    top:80%;
+    right: 25%;
+    z-index: 5;
+    width: 45px;
+}
+
+.blue-shell-small {
+    position: absolute;
+    top:70%;
+    right: 10%;
+    z-index: 5;
+    width: 30px;
+}
+
+.pink-shell-cone {
+    position: absolute;
+    top: 90%;
+    right: 13%;
+    z-index: 5;
+    width: 40px;
+}
+
+.pink-ring {
+    position: absolute;
+    top:80%;
+    left: 5%;
+    z-index: 5;
+    width: 40px;
+}
+
+.blue-shell-big {
+    position: absolute;
+    top:65%;
+    left: 15%;
+    z-index: 5;
+    width: 55px;
+}
+
+.blue-shell-round {
+    position: absolute;
+    top:88%;
+    left: 23%;
+    z-index: 5;
+    width: 35px;
+}
+
+.pink-shell-small {
+    position: absolute;
+    top:75%;
+    left: 28%;
+    z-index: 5;
+    width: 40px;
+}
 
 .aquarist {
     position: absolute;
