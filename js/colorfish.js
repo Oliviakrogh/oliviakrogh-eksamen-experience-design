@@ -8,6 +8,7 @@ const darkPinkUsed = document.querySelector(".dark-pink-used");
 const firstFishColored = document.querySelector(".first-fish-colored");
 const arrowButton = document.querySelector(".arrow");
 const darkPinkButton = document.querySelector(".dark-pink-paint");
+const backButton = document.querySelector(".back-arrow");
 
 //Når man trykker på det på fisken der skal være pink farvet. også har jeg lavet sådan at man kan klikke den fra igen. (det er ikke en toggle, fordi jeg kunne ikke få den til at virke når jeg skulle bruge min function)
 pinkButton.addEventListener("click", () => {
@@ -71,4 +72,7 @@ arrowButton.addEventListener("click", () => {
   });
 });
 
-//her ville jeg have gjort sådan der kom en ny fisk ind og nye farver så man kan prøve flere forskellige.
+
+backButton.addEventListener("click", () => {
+  window.location.href = "index.html";
+});

@@ -69,12 +69,17 @@
 
 
 .back-arrow{ /* Min tilbage knap, jeg har placeret nede i venstre hjørne */
-  position: fixed;
-  bottom: 16px;
+  position: absolute;
+  bottom: 10px;
   left: 16px;
-  width: 110px;
+  width: 150px;
+  height: 150px;
   border: none;
-  background: transparent;
+  background-image: url("../img/back-arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
   padding: 8px;
   cursor: pointer;
   z-index: 20;
