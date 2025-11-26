@@ -113,7 +113,7 @@
     position: absolute;
     bottom: 7%;
     left: 4%;
-    z-index: 3;
+    z-index: 5;
     width: 240px;
 }
 
@@ -121,12 +121,49 @@
     position: absolute;
     bottom: 9%;
     left: 20%;
-    z-index: 3;
+    z-index: 5;
     width: 100px;
 }
 
+.green-seaweed-3 {
+    position: absolute;
+    top: 63%;
+    left: 9%;
+    z-index: 2;
+    width: 200px;
+}
 
+.yellow-seaweed-3 {
+    position: absolute;
+    top: 73%;
+    left: 14%;
+    z-index: 3;
+    width: 150px;
+}
 
+.seagrass {
+    position: absolute;
+    bottom: 12%;
+    left: 22%;
+    z-index: 4;
+    width: 80px;
+}
+
+.seagrass-small {
+    position: absolute;
+    bottom: 10%;
+    left: 27%;
+    z-index: 4;
+    width: 60px;
+}
+
+.seagrass-mini {
+    position: absolute;
+    bottom: 8%;
+    right: 32%;
+    z-index: 4;
+    width: 40px;
+}
 
 /* Fisk der svømmer rundt */
 .first-fish-plain,
