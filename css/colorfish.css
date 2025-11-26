@@ -39,7 +39,7 @@
 }
 
 .blue-paint {
-  background-image: url("/img/blue-paint.png");
+  background-image: url("../img/blue-paint.png");
 }
 
 .dark-pink-paint {
@@ -47,7 +47,7 @@
 }
 
 .pink-paint {
-  background-image: url("/img/pink-paint.png");
+  background-image: url("../img/pink-paint.png");
 }
 
 /* Arrow når man er færdig */
