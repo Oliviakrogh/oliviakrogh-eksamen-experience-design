@@ -72,7 +72,7 @@ arrowButton.addEventListener("click", () => {
   });
 });
 
-
+//Her får jeg min back arrow til at virke og fører til forsiden
 backButton.addEventListener("click", () => {
   window.location.href = "index.html";
 });
