@@ -92,7 +92,43 @@
   height: auto;
 }
 
-/* Fisk */
+/* pynt i baggrunden */
+.purple-seaweed-big {
+    position: absolute;
+    top: 32%;
+    left: 1%;
+    z-index: 2;
+    width: 230px;
+}
+
+.purple-seaweed {
+    position: absolute;
+    top: 72%;
+    left: 1%;
+    z-index: 2;
+    width: 150px;
+}
+
+.stone-big {
+    position: absolute;
+    bottom: 7%;
+    left: 4%;
+    z-index: 3;
+    width: 240px;
+}
+
+.stone-small-2 {
+    position: absolute;
+    bottom: 9%;
+    left: 20%;
+    z-index: 3;
+    width: 100px;
+}
+
+
+
+
+/* Fisk der svømmer rundt */
 .first-fish-plain,
 .pink-used,
 .blue-used,
