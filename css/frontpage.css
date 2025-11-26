@@ -68,16 +68,16 @@ position: relative;
 
 .green-seaweed {
     position: absolute;
-    top:25%;
-    left: 3%;
+    top:10%;
+    left: 1%;
     z-index: 4;
     width: 170px;
 }
 
 .green-seaweed-small {
     position: absolute;
-    top:46%;
-    left: 14%;
+    top:35%;
+    left: 10%;
     z-index: 4;
     width: 100px;
     
@@ -85,7 +85,7 @@ position: relative;
 
 .green-seaweed-big {
     position: absolute;
-    top:20%;
+    top:10%;
     right: 14%;
     z-index: 4;
     width: 160px;
@@ -94,7 +94,7 @@ position: relative;
 
 .green-seaweed-big-2 {
     position: absolute;
-    top:25%;
+    top:12%;
     right: 1%;
     z-index: 4;
     width: 150px;
@@ -103,8 +103,8 @@ position: relative;
 
 .purple-seaweed {
     position: absolute;
-    top:60%;
-    left: 35%;
+    top:50%;
+    left: 30%;
     z-index: 3;
     width: 100px;
 }
@@ -112,15 +112,24 @@ position: relative;
 .yellow-seaweed {
     position: absolute;
     z-index: 4;
-    top:45%;
-    left: 30%;
+    top:33%;
+    left: 24%;
     z-index: 2;
     width: 120px;
 }
 
+.purple-seaweed-big {
+    position: absolute;
+    z-index: 4;
+    top:17%;
+    left: 13%;
+    z-index: 2;
+    width: 180px;
+}
+
 .yellow-seaweed-big {
     position: absolute;
-    top:43%;
+    top:30%;
     right: 7%;
     z-index: 3;
     width: 180px;
@@ -128,31 +137,31 @@ position: relative;
 
 .stone-big {
     position: absolute;
-    top:70%;
-    left: 6%;
+    top:55%;
+    left: 4%;
     z-index: 5;
     width: 170px;
 }
 
 .stone-big-2 {
     position: absolute;
-    top:68%;
+    top:59%;
     right: 17%;
     z-index: 5;
-    width: 100px;
+    width: 110px;
 }
 
 .stone-small {
     position: absolute;
-    top:70%;
-    left: 32%;
+    top:57%;
+    left: 27%;
     z-index: 5;
     width: 100px;
 }
 
 .stone-small-2 {
     position: absolute;
-    top:68%;
+    top:57%;
     right: 23%;
     z-index: 5;
     width: 70px;
@@ -161,7 +170,7 @@ position: relative;
 
 .pink-shell {
     position: absolute;
-    top:68%;
+    top:55%;
     right: 32%;
     z-index: 5;
     width: 45px;
@@ -170,7 +179,7 @@ position: relative;
 
 .aquarist {
     position: absolute;
-    top:43%;
+    top: 31%;
     left: 43%;
     z-index: 6;
     width: 180px;
@@ -208,7 +217,7 @@ position: relative;
 
 .crab {
     position: absolute;
-    top:63%;
+    top:55%;
     right: 18%;
     z-index: 10;
     width: 70px;
