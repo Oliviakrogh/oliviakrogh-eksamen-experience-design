@@ -181,6 +181,30 @@
     width: 130px;
 }
 
+.green-seagrass-tall {
+    position: absolute;
+    bottom: 3%;
+    right: 0.5%;
+    z-index: 4;
+    width: 250px;
+}
+
+.stone-big-round {
+    position: absolute;
+    bottom: 1%;
+    right: 6%;
+    z-index: 5;
+    width: 150px;
+}
+
+.stone-tiny {
+    position: absolute;
+    bottom: 4%;
+    right: 17%;
+    z-index: 5;
+    width: 100px;
+}
+
 /* Fisk der svømmer rundt */
 .first-fish-plain,
 .pink-used,
