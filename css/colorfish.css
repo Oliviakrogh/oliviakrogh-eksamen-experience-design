@@ -12,7 +12,13 @@
   background-repeat: no-repeat;
 }
 
-/* Buttons */
+/* først skjuler jeg de andre runder */
+.fish-2,
+.paint-buttons-2 {
+  display: none;
+}
+
+/* Buttons til første runde*/
 .paint-buttons {
   display: flex;
   justify-content: center;
@@ -50,6 +56,48 @@
   background-image: url("../img/pink-paint.png");
 }
 
+.paint-buttons-2 {
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 20;
+}
+
+.light-purple-paint,
+.medium-light-purple-paint,
+.medium-purple-paint,
+.dark-purple-paint {
+  position: static;
+  width: 150px;
+  height: 150px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 20;
+}
+
+.light-purple-paint {
+  background-image: url("../img/light-purple-paint.png");
+}
+
+.medium-light-purple-paint {
+  background-image: url("../img/medium-light-purple-paint.png");
+}
+
+.medium-purple-paint {
+  background-image: url("../img/medium-purple-paint.png");
+}
+
+.dark-purple-paint {
+  background-image: url("../img/dark-purple-paint.png");
+}
+
+
 /* Arrow når man er færdig */
 .arrow {
   position: relative;
@@ -66,6 +114,14 @@
   display: none;
   background-image: url("../img/arrow.png");
 }
+
+
+
+
+
+
+
+
 
 
 .back-arrow{ /* Min tilbage knap, jeg har placeret nede i venstre hjørne */
@@ -211,7 +267,7 @@
 .blue-used,
 .dark-pink-used {
   position: absolute;
-  bottom: 10%;
+  bottom: 25%;
   left: 50%;
   width: 40%;
   height: auto;
@@ -237,6 +293,42 @@
   z-index: 11;
   display: none;
 }
+
+/* Runde 2 plain og farvede fisk */
+.second-fish-plain,
+.light-purple-used,
+.medium-light-purple-used,
+.medium-purple-used,
+.dark-purple-used {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+/* Z-index for at farvede fisk ligger over plain fisk */
+.second-fish-plain { 
+  z-index: 5; 
+  display: none; 
+}
+
+.light-purple-used { 
+  z-index: 10; 
+  display: none; }
+
+.medium-light-purple-used { 
+  z-index: 11; 
+  display: none; }
+
+.medium-purple-used { 
+  z-index: 12; 
+  display: none; }
+
+.dark-purple-used { 
+  z-index: 13; 
+  display: none; }
 
 
 
