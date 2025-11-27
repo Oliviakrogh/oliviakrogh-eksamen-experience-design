@@ -261,7 +261,7 @@
     width: 100px;
 }
 
-/* Fisk der svømmer rundt */
+/* første Fisks farver */
 .first-fish-plain,
 .pink-used,
 .blue-used,
@@ -295,7 +295,6 @@
 }
 
 /* Runde 2 plain og farvede fisk */
-.second-fish-plain,
 .light-purple-used,
 .medium-light-purple-used,
 .medium-purple-used,
@@ -306,6 +305,17 @@
   width: 40%;
   height: auto;
   transform: translateX(-50%);
+}
+
+.second-fish-plain {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+  /* INGEN transform her! */
+  display: none;
+  z-index: 5;
 }
 
 /* Z-index for at farvede fisk ligger over plain fisk */
@@ -332,7 +342,7 @@
 
 
 
-/* Animation */
+/* Animation til at de farvede fisk skal svømme ud*/
 @keyframes moveRight {
   0% {
     transform: translateX(-50%);
@@ -353,6 +363,41 @@
   display: none !important;
 }
 
+/* animation til at de "plain" fisk skal svømme ind fra venstre */
+@keyframes moveInFromLeft {
+  0% {
+    transform: translateX(-150%) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.move-in {
+  animation: moveInFromLeft 1s forwards;
+}
+
+/* start animation til anden runde (fisk svømmer ind) */
+@keyframes moveIn2 {
+  0% {
+    transform: translateX(-150%) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.move-in-2 {
+  animation: moveIn2 1s forwards;
+}
+
+
+
+/* boble gifs */
 .bobbel {
   width: 10%;
   position: absolute;
@@ -367,6 +412,7 @@
   top: 10%;
 }
 
+/* fisk i baggrunden */
 .purple-fish {
     position: absolute;
     top:15%;
@@ -397,6 +443,7 @@
   }
 }
 
+/* fisk i baggrunden */
 .nemo {
     position: absolute;
     top:25%;
@@ -426,6 +473,8 @@
     transform: translate(0, 0) scaleX(1) rotate(0deg);
   }
 }
+
+/* fisk i baggrunden */
 
 .brown-fish {
     position: absolute;
@@ -457,7 +506,7 @@
   }
 }
 
-
+/* fisk i baggrunden */
 .dory {
     position: absolute;
     top:70%;
