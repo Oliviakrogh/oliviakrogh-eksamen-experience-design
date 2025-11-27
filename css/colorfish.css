@@ -14,13 +14,138 @@
 
 /* først skjuler jeg de andre runder */
 .fish-2,
-.paint-buttons-2 {
+.paint-buttons-2,
+.fish-3,
+.paint-buttons-3, 
+.fish-4,
+.paint-buttons-4,
+.third-fish-plain,
+.pink-used,
+.blue-used,
+.fourth-fish-plain,
+.light-purple-used,
+.medium-light-purple-used,
+.medium-purple-used,
+.dark-purple-used {
   display: none;
 }
+
 
 /* Buttons til første runde*/
 .paint-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 20;
+}
+
+.orange-paint {
+  position: static;
+  width: 150px;
+  height: 150px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 20;
+}
+
+.orange-paint {
+  background-image: url("../img/orange-paint.png");
+}
+
+
+/* 1. Fisks farver */
+.first-fish-plain,
+.orange-used {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+  transform: translateX(-50%); 
+}
+
+.first-fish-plain {
+  z-index: 5;
+}
+
+.orange-used {
+  z-index: 10;
+  display: none;
+}
+
+
+/* Buttons til anden runde*/
+.paint-buttons-2 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 20;
+}
+
+.light-blue-paint,
+.dark-blue-paint {
+  position: static;
+  width: 150px;
+  height: 150px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 20;
+}
+
+.light-blue-paint {
+  background-image: url("../img/light-blue-paint.png");
+}
+
+.dark-blue-paint {
+  background-image: url("../img/dark-blue-paint.png");
+}
+
+
+/* 2. Fisks farver */
+.second-fish-plain,
+.light-blue-used,
+.dark-blue-used {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  width: 22%;
+  height: auto;
+  transform: translateX(-50%);
+  display: none; 
+}
+
+.second-fish-plain {
+  z-index: 5;
+}
+
+.light-blue-used {
+  z-index: 10;
+  display: none;
+}
+
+.dark-blue-used {
+  z-index: 12;
+  display: none;
+}
+
+
+/* Buttons til tredje runde*/
+.paint-buttons-3 {
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -56,7 +181,44 @@
   background-image: url("../img/pink-paint.png");
 }
 
-.paint-buttons-2 {
+/* 3. Fisks farver */
+.third-fish-plain,
+.pink-used,
+.blue-used,
+.dark-pink-used {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+  transform: translateX(-50%);
+  display: none; 
+}
+
+.third-fish-plain {
+  z-index: 5;
+}
+
+.pink-used {
+  z-index: 10;
+  display: none;
+}
+
+.blue-used {
+  z-index: 12;
+  display: none;
+}
+
+.dark-pink-used {
+  z-index: 11;
+  display: none;
+}
+
+
+
+
+/* Buttons til fjerde runde*/
+.paint-buttons-4 {
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -97,6 +259,57 @@
   background-image: url("../img/dark-purple-paint.png");
 }
 
+/* Runde 4 plain og farvede fisk */
+.light-purple-used,
+.medium-light-purple-used,
+.medium-purple-used,
+.dark-purple-used {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.fourth-fish-plain {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  width: 40%;
+  height: auto;
+  display: none;
+  z-index: 5;
+}
+
+.fourth-fish-plain { 
+  z-index: 5; 
+  display: none; 
+}
+
+.light-purple-used { 
+  z-index: 10; 
+  display: none; }
+
+.medium-light-purple-used { 
+  z-index: 11; 
+  display: none; }
+
+.medium-purple-used { 
+  z-index: 12; 
+  display: none; }
+
+.dark-purple-used { 
+  z-index: 13; 
+  display: none; }
+
+
+
+
+
+
+
+
 
 /* Arrow når man er færdig */
 .arrow {
@@ -115,16 +328,8 @@
   background-image: url("../img/arrow.png");
 }
 
-
-
-
-
-
-
-
-
-
-.back-arrow{ /* Min tilbage knap, jeg har placeret nede i venstre hjørne */
+/* Min tilbage knap, jeg har placeret nede i venstre hjørne */
+.back-arrow{ 
   position: absolute;
   bottom: 10px;
   left: 16px;
@@ -147,6 +352,11 @@
   width: 80px;
   height: auto;
 }
+
+
+
+
+
 
 /* pynt i baggrunden */
 .purple-seaweed-big {
@@ -260,86 +470,6 @@
     z-index: 5;
     width: 100px;
 }
-
-/* første Fisks farver */
-.first-fish-plain,
-.pink-used,
-.blue-used,
-.dark-pink-used {
-  position: absolute;
-  bottom: 25%;
-  left: 50%;
-  width: 40%;
-  height: auto;
-  transform: translateX(-50%);
-}
-
-.first-fish-plain {
-  z-index: 5;
-  display: block;
-}
-
-.pink-used {
-  z-index: 10;
-  display: none;
-}
-
-.blue-used {
-  z-index: 12;
-  display: none;
-}
-
-.dark-pink-used {
-  z-index: 11;
-  display: none;
-}
-
-/* Runde 2 plain og farvede fisk */
-.light-purple-used,
-.medium-light-purple-used,
-.medium-purple-used,
-.dark-purple-used {
-  position: absolute;
-  bottom: 35%;
-  left: 50%;
-  width: 40%;
-  height: auto;
-  transform: translateX(-50%);
-}
-
-.second-fish-plain {
-  position: absolute;
-  bottom: 35%;
-  left: 50%;
-  width: 40%;
-  height: auto;
-  /* INGEN transform her! */
-  display: none;
-  z-index: 5;
-}
-
-/* Z-index for at farvede fisk ligger over plain fisk */
-.second-fish-plain { 
-  z-index: 5; 
-  display: none; 
-}
-
-.light-purple-used { 
-  z-index: 10; 
-  display: none; }
-
-.medium-light-purple-used { 
-  z-index: 11; 
-  display: none; }
-
-.medium-purple-used { 
-  z-index: 12; 
-  display: none; }
-
-.dark-purple-used { 
-  z-index: 13; 
-  display: none; }
-
 
 
 /* Animation til at de farvede fisk skal svømme ud*/
