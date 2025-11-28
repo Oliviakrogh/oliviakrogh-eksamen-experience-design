@@ -33,3 +33,12 @@ const germanButton = document.querySelector(".german");
 danishButton.addEventListener("click", () => changeLanguage(danish));
 englishButton.addEventListener("click", () => changeLanguage(english));
 germanButton.addEventListener("click", () => changeLanguage(german));
+
+
+const audio = new Audio('audio/background-music.mp3');
+audio.loop = true;
+
+// Start musikken på første brugerinteraktion
+document.body.addEventListener('click', () => {
+    audio.play();
+}, { once: true });
