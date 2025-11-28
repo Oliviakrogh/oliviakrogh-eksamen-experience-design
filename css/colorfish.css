@@ -20,8 +20,6 @@
 .fish-4,
 .paint-buttons-4,
 .third-fish-plain,
-.pink-used,
-.blue-used,
 .fourth-fish-plain,
 .light-purple-used,
 .medium-light-purple-used,
@@ -31,7 +29,7 @@
 }
 
 
-/* Buttons til første runde*/
+/* Runde 1 buttons*/
 .paint-buttons {
   display: flex;
   justify-content: center;
@@ -60,7 +58,7 @@
 }
 
 
-/* 1. Fisks farver */
+/* Runde 1 Fisks farver */
 .first-fish-plain,
 .orange-used {
   position: absolute;
@@ -81,7 +79,7 @@
 }
 
 
-/* Buttons til anden runde*/
+/* Runde 2 Buttons */
 .paint-buttons-2 {
   display: none;
   justify-content: center;
@@ -115,7 +113,7 @@
 }
 
 
-/* 2. Fisks farver */
+/* runde 2 Fisks farver */
 .second-fish-plain,
 .light-blue-used,
 .dark-blue-used {
@@ -143,7 +141,7 @@
 }
 
 
-/* Buttons til tredje runde*/
+/* runde 3 Buttons */
 .paint-buttons-3 {
   display: none;
   justify-content: center;
@@ -181,7 +179,7 @@
   background-image: url("../img/pink-paint.png");
 }
 
-/* 3. Fisks farver */
+/* runde 3 Fisks farver */
 .third-fish-plain,
 .pink-used,
 .blue-used,
@@ -217,7 +215,7 @@
 
 
 
-/* Buttons til fjerde runde*/
+/* Runde 4 Buttons */
 .paint-buttons-4 {
   justify-content: center;
   align-items: center;
@@ -259,7 +257,7 @@
   background-image: url("../img/dark-purple-paint.png");
 }
 
-/* Runde 4 plain og farvede fisk */
+/* Runde 4 fisks farver */
 .light-purple-used,
 .medium-light-purple-used,
 .medium-purple-used,
@@ -280,6 +278,7 @@
   height: auto;
   display: none;
   z-index: 5;
+  transform: translateX(-50%);
 }
 
 .fourth-fish-plain { 

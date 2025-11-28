@@ -86,7 +86,7 @@ function startRound1() {
   firstFish.style.display = "block";
   firstFish.classList.add("move-in");
   document.querySelector(".paint-buttons").style.display = "flex"; 
-orangeUsed.style.display = "none"; // sikrer at orangeUsed starter skjult
+orangeUsed.style.display = "none"; 
   arrowButton.style.display = "none";
   // Arrow skal først vises når orangeUsed vælges
   orangeUsed.style.display = "none";
@@ -96,21 +96,61 @@ function startRound2() {
   hideAllRounds();
   secondFish.style.display = "block";
   secondFish.classList.add("move-in");
-  document.querySelector(".paint-buttons-2").style.display = "flex"; // blue buttons
+  document.querySelector(".paint-buttons-2").style.display = "flex";
+
+  // FJERN move-in når den er færdig!
+  secondFish.addEventListener("animationend", () => {
+    secondFish.classList.remove("move-in");
+  }, { once: true });
 }
 
 function startRound3() {
   hideAllRounds();
+
+  // Vis plain fisken for runde 3
   thirdFish.style.display = "block";
   thirdFish.classList.add("move-in");
-  document.querySelector(".paint-buttons-3").style.display = "flex"; // pink og blue buttons
+
+  // Vis knapper for runde 3
+  document.querySelector(".paint-buttons-3").style.display = "flex";
+
+  // Nulstil farvede fisk for runde 3
+  pinkUsed.style.display = "none";
+  blueUsed.style.display = "none";
+  darkPinkUsed.style.display = "none";
+
+  // Arrow skjules indtil alle farver er valgt
+  arrowButton.style.display = "none";
+
+  // Fjern move-in når animationen er færdig
+  thirdFish.addEventListener("animationend", () => {
+    thirdFish.classList.remove("move-in");
+  }, { once: true });
 }
 
 function startRound4() {
   hideAllRounds();
+
+  // Vis plain fisken for runde 4
   fourthFish.style.display = "block";
   fourthFish.classList.add("move-in");
-  document.querySelector(".paint-buttons-4").style.display = "flex"; // purple buttons
+
+  // Vis knapper for runde 4
+  document.querySelector(".paint-buttons-4").style.display = "flex";
+
+  // Nulstil alle farvede fisk til skjult
+  lightPurpleUsed.style.display = "none";
+  mediumLightUsed.style.display = "none";
+  mediumPurpleUsed.style.display = "none";
+  darkPurpleUsed.style.display = "none";
+
+  // Arrow skjules indtil alle farver er valgt
+  arrowButton.style.display = "none";
+
+  // Fjern move-in, når animationen er færdig
+  fourthFish.addEventListener("animationend", () => {
+    fourthFish.classList.remove("move-in");
+  }, { once: true });
 }
 
 //Når man trykker på det på fisken der skal være pink farvet. også har jeg lavet sådan at man kan klikke den fra igen. (det er ikke en toggle, fordi jeg kunne ikke få den til at virke når jeg skulle bruge min function)
