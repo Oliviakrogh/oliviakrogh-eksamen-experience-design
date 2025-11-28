@@ -46,6 +46,8 @@ const yellowStar4 = document.querySelector(".yellow-star-4");
 
 const aquarist = document.querySelector(".aquarist");
 
+const speechBobbel = document.querySelector(".speech-bobbel");
+
 // arrow knapper
 const arrowButton = document.querySelector(".arrow");
 const backButton = document.querySelector(".back-arrow");
@@ -312,17 +314,21 @@ arrowButton.addEventListener("click", () => {
     mediumLightUsed.classList.remove("move-right");
     mediumPurpleUsed.classList.remove("move-right");
     darkPurpleUsed.classList.remove("move-right");
-    yellowStar4.classList.add("plain-star-4"); 
-      yellowStar4.style.display = "block";
-      plainStar4.replaceWith(yellowStar4);
+    [yellowStar1, yellowStar2, yellowStar3, yellowStar4].forEach(star => {
+  star.classList.add("final-stars");
+  document.body.appendChild(star); 
+  star.style.display = "block";
+  aquarist.style.display = "block";
+});
+
     hideAllRounds();
     arrowButton.style.display = "none";
-     [yellowStar1, yellowStar2, yellowStar3, yellowStar4].forEach(star => {
-      star.classList.add("final-stars");
-      document.body.appendChild(star); 
-      star.style.display = "block";
-      aquarist.style.display = "block";
-    });
+
+    aquarist.style.display = "block";
+
+    setTimeout(() => {
+      speechBobbel.style.display = "block";
+    }, 1000);
     }, { once: true });
   }
 });

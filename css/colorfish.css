@@ -29,7 +29,8 @@
 .yellow-star-2,
 .yellow-star-3,
 .yellow-star-4,
-.aquarist {
+.aquarist,
+.speech-bobbel {
   display: none;
 }
 
@@ -430,6 +431,38 @@
   }
  
 }
+
+.speech-bobbel {
+  position: absolute;
+  bottom: 37%;
+  right: 5%;
+  width: 250px;
+  height: auto;
+  transform: translateX(-50%);
+  z-index: 16;
+  animation: speechMove 1s forwards ease-out;
+}
+
+@keyframes speechMove {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
 
 /* Arrow når man er færdig */
 .arrow {
