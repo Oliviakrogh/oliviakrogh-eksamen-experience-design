@@ -25,37 +25,14 @@
 .medium-light-purple-used,
 .medium-purple-used,
 .dark-purple-used,
-.yellow-star {
-  display: none;
-}
-
-.stars {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  gap: 25px;
-  top: 3%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 15;
-}
-
-.plain-star-1,
-.plain-star-2,
-.plain-star-3,
-.plain-star-4 {
-  width: 50px;                 
-  height: auto;           
-}
-
 .yellow-star-1,
 .yellow-star-2,
 .yellow-star-3,
-.yellow-star-4 {
-  width: 50px;
-  height: auto;
+.yellow-star-4,
+.aquarist {
+  display: none;
 }
+
 
 
 
@@ -373,8 +350,86 @@
 
 
 
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 25px;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+}
 
+.plain-star-1,
+.plain-star-2,
+.plain-star-3,
+.plain-star-4 {
+  width: 50px;                 
+  height: auto;           
+}
 
+.yellow-star-1,
+.yellow-star-2,
+.yellow-star-3,
+.yellow-star-4 {
+  width: 50px;
+  height: auto;
+}
+
+.final-stars {
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1000;
+  opacity: 0;
+  animation: starsMove 1s forwards ease-out;
+}
+
+@keyframes starsMove {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  
+  50% {
+    transform: translate(-50%, -50%) scale(8.4);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(6);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(8);
+    opacity: 1;
+  }
+}
+
+.aquarist {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 300px;
+  height: auto;
+  transform: translateX(-50%);
+  z-index: 15;
+  animation: aquaristIn 0.2s forwards ease-out;
+}
+
+@keyframes aquaristIn {
+  0% {
+    transform: translateX(-50%) translateY(-3%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-3%); 
+    opacity: 1;
+  }
+ 
+}
 
 /* Arrow når man er færdig */
 .arrow {

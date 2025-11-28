@@ -44,6 +44,8 @@ const yellowStar2 = document.querySelector(".yellow-star-2");
 const yellowStar3 = document.querySelector(".yellow-star-3");
 const yellowStar4 = document.querySelector(".yellow-star-4");
 
+const aquarist = document.querySelector(".aquarist");
+
 // arrow knapper
 const arrowButton = document.querySelector(".arrow");
 const backButton = document.querySelector(".back-arrow");
@@ -313,8 +315,14 @@ arrowButton.addEventListener("click", () => {
     yellowStar4.classList.add("plain-star-4"); 
       yellowStar4.style.display = "block";
       plainStar4.replaceWith(yellowStar4);
-    currentRound = 1;
-    startRound1();
+    hideAllRounds();
+    arrowButton.style.display = "none";
+     [yellowStar1, yellowStar2, yellowStar3, yellowStar4].forEach(star => {
+      star.classList.add("final-stars");
+      document.body.appendChild(star); 
+      star.style.display = "block";
+      aquarist.style.display = "block";
+    });
     }, { once: true });
   }
 });
