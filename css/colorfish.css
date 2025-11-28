@@ -24,9 +24,32 @@
 .light-purple-used,
 .medium-light-purple-used,
 .medium-purple-used,
-.dark-purple-used {
+.dark-purple-used,
+.yellow-star {
   display: none;
 }
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 25px;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+}
+
+.plain-star-1,
+.plain-star-2,
+.plain-star-3,
+.plain-star-4 {
+  width: 50px;                 
+  height: auto;           
+}
+
+
 
 
 /* Runde 1 buttons*/
