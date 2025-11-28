@@ -34,6 +34,16 @@ const mediumPurpleUsed = document.querySelector(".medium-purple-used");
 const darkPurpleUsed = document.querySelector(".dark-purple-used");
 const fourthFish = document.querySelector(".fourth-fish-plain");
 
+// stjerner
+const plainStar1 = document.querySelector(".plain-star-1");
+const plainStar2 = document.querySelector(".plain-star-2");
+const plainStar3 = document.querySelector(".plain-star-3");
+const plainStar4 = document.querySelector(".plain-star-4");
+const yellowStar1 = document.querySelector(".yellow-star-1");
+const yellowStar2 = document.querySelector(".yellow-star-2");
+const yellowStar3 = document.querySelector(".yellow-star-3");
+const yellowStar4 = document.querySelector(".yellow-star-4");
+
 // arrow knapper
 const arrowButton = document.querySelector(".arrow");
 const backButton = document.querySelector(".back-arrow");
@@ -250,6 +260,9 @@ arrowButton.addEventListener("click", () => {
     firstFish.addEventListener("animationend", () => {
       firstFish.classList.remove("move-right");
       orangeUsed.classList.remove("move-right");
+      yellowStar1.classList.add("plain-star"); 
+      yellowStar1.style.display = "block";
+      plainStar1.replaceWith(yellowStar1);
       currentRound = 2;
       startRound2();
     }, { once: true });
@@ -261,6 +274,9 @@ arrowButton.addEventListener("click", () => {
       secondFish.classList.remove("move-right");
       lightBlueUsed.classList.remove("move-right");
       darkBlueUsed.classList.remove("move-right");
+      yellowStar2.classList.add("plain-star-2"); 
+      yellowStar2.style.display = "block";
+      plainStar2.replaceWith(yellowStar2);
       currentRound = 3;
       startRound3();
     }, { once: true });
@@ -275,6 +291,9 @@ arrowButton.addEventListener("click", () => {
       pinkUsed.classList.remove("move-right");
       blueUsed.classList.remove("move-right");
       darkPinkUsed.classList.remove("move-right");
+      yellowStar3.classList.add("plain-star-3"); 
+      yellowStar3.style.display = "block";
+      plainStar3.replaceWith(yellowStar3);
       currentRound = 4;
       startRound4();
     }, { once: true });
@@ -291,6 +310,9 @@ arrowButton.addEventListener("click", () => {
     mediumLightUsed.classList.remove("move-right");
     mediumPurpleUsed.classList.remove("move-right");
     darkPurpleUsed.classList.remove("move-right");
+    yellowStar4.classList.add("plain-star-4"); 
+      yellowStar4.style.display = "block";
+      plainStar4.replaceWith(yellowStar4);
     currentRound = 1;
     startRound1();
     }, { once: true });
