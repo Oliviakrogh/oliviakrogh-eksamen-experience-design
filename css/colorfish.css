@@ -367,7 +367,7 @@
 .plain-star-2,
 .plain-star-3,
 .plain-star-4 {
-  width: 3vw;                 
+  width: 4vw;                 
   height: auto;           
 }
 
@@ -375,7 +375,7 @@
 .yellow-star-2,
 .yellow-star-3,
 .yellow-star-4 {
-  width: 3vw;
+  width: 4vw;
   height: auto;
 }
 
@@ -413,7 +413,7 @@
   position: absolute;
   bottom: 0;
   right: 10%;
-  width: 300px;
+  width: 17vw;
   height: auto;
   transform: translateX(-50%);
   z-index: 15;
@@ -485,8 +485,8 @@
 /* Tilbage knap, jeg har placeret nede i venstre hjørne */
 .back-arrow{ 
   position: absolute;
-  bottom: 10px;
-  left: 16px;
+  bottom: 0%;
+  left: 1%;
   width: 10vw;
   height: 10vw;
   border: none;
@@ -538,7 +538,7 @@
     bottom: 9%;
     left: 20%;
     z-index: 5;
-    width: 100px;
+    width: 8vw;
 }
 
 .green-seaweed-3 {
@@ -546,7 +546,7 @@
     top: 63%;
     left: 9%;
     z-index: 2;
-    width: 200px;
+    width: 14vw;
 }
 
 .yellow-seaweed-3 {
@@ -554,7 +554,7 @@
     top: 73%;
     left: 14%;
     z-index: 3;
-    width: 150px;
+    width: 10vw;
 }
 
 .seagrass {
@@ -562,7 +562,7 @@
     bottom: 12%;
     left: 22%;
     z-index: 4;
-    width: 80px;
+    width: 5vw;
 }
 
 .seagrass-small {
@@ -570,7 +570,7 @@
     bottom: 10%;
     left: 27%;
     z-index: 4;
-    width: 60px;
+    width: 4vw;
 }
 
 .seagrass-mini {
@@ -578,7 +578,7 @@
     bottom: 5%;
     right: 26%;
     z-index: 4;
-    width: 40px;
+    width: 4vw;
 }
 
 .pink-seaweed {
@@ -586,7 +586,7 @@
     bottom: 5%;
     right: 20%;
     z-index: 3;
-    width: 120px;
+    width: 9vw;
 }
 
 .seagrass-big {
@@ -594,7 +594,7 @@
     bottom: 5%;
     right: 16%;
     z-index: 4;
-    width: 130px;
+    width: 8vw;
 }
 
 .green-seagrass-tall {
@@ -602,15 +602,15 @@
     bottom: 3%;
     right: 0.5%;
     z-index: 4;
-    width: 250px;
+    width: 17vw;
 }
 
 .stone-big-round {
     position: absolute;
     bottom: 1%;
-    right: 6%;
+    right: 5%;
     z-index: 5;
-    width: 150px;
+    width: 11vw;
 }
 
 .stone-tiny {
@@ -618,20 +618,20 @@
     bottom: 4%;
     right: 17%;
     z-index: 5;
-    width: 100px;
+    width: 7vw;
 }
 
 
 /* boble gifs */
 .bobbel {
-  width: 10%;
+  width: 5vw;
   position: absolute;
   left: 10%;
   top: 20%;
 }
 
 .bobbel-2 {
-  width: 10%;
+  width: 8vw;
   position: absolute;
   right: 10%;
   top: 10%;
@@ -643,7 +643,7 @@
     top:15%;
     right: 10%;
     z-index: 1;
-    width: 70px;
+    width: 6vw;
     animation: purple-fish 20s linear infinite;
 }
 
@@ -674,7 +674,7 @@
     top:25%;
     left: 20%;
     z-index: 1;
-    width: 50px;
+    width: 4vw;
     animation: nemo 15s linear infinite;
 }
 
@@ -706,7 +706,7 @@
     top:50%;
     right: 1%;
     z-index: 1;
-    width: 70px;
+    width: 5vw;
     animation: brown-fish 40s linear infinite;
 }
 
@@ -737,7 +737,7 @@
     top:70%;
     left: 15%;
     z-index: 1;
-    width: 70px;
+    width: 7vw;
     animation: dory 15s linear infinite;
 }
 

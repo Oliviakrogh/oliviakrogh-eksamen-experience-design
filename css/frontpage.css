@@ -26,8 +26,8 @@ position: relative;
     bottom: 0%;  
     left: 50%;
     transform: translateX(-50%);
-    width: 360px;   
-    height: 360px;
+    width: 25vw;   
+    height: 25vw;
     background-image: url("../img/color-fish.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -73,8 +73,8 @@ position: relative;
     bottom: 0%;
     left: 1%;
     z-index: 5;
-    width: 40px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     background-image: url("../img/english.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -88,10 +88,10 @@ position: relative;
 .german {
     position: absolute;
     bottom: 0%;
-    left: 4%;
+    left: 5%;
     z-index: 5;
-    width: 40px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     background-image: url("../img/german.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -105,10 +105,10 @@ position: relative;
 .danish {
     position: absolute;
     bottom: 0%;
-    left: 7%;
+    left: 9%;
     z-index: 5;
-    width: 40px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     background-image: url("../img/danish.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -125,7 +125,7 @@ position: relative;
     top:10%;
     left: 1%;
     z-index: 4;
-    width: 170px;
+    width: 11vw;
 }
 
 .green-seaweed-small {
@@ -133,7 +133,7 @@ position: relative;
     top:35%;
     left: 10%;
     z-index: 4;
-    width: 100px;
+    width: 7vw;
     
 }
 
@@ -142,7 +142,7 @@ position: relative;
     top:10%;
     right: 14%;
     z-index: 4;
-    width: 160px;
+    width: 10.5vw;
     
 }
 
@@ -151,7 +151,7 @@ position: relative;
     top:12%;
     right: 1%;
     z-index: 4;
-    width: 150px;
+    width: 10vw;
     
 }
 
@@ -160,7 +160,7 @@ position: relative;
     top:50%;
     left: 30%;
     z-index: 3;
-    width: 100px;
+    width: 6vw;
 }
 
 .yellow-seaweed {
@@ -169,7 +169,7 @@ position: relative;
     top:33%;
     left: 24%;
     z-index: 2;
-    width: 120px;
+    width: 8vw;
 }
 
 .purple-seaweed-big {
@@ -178,7 +178,7 @@ position: relative;
     top:17%;
     left: 13%;
     z-index: 2;
-    width: 180px;
+    width: 12vw;
 }
 
 .yellow-seaweed-big {
@@ -186,7 +186,7 @@ position: relative;
     top:30%;
     right: 7%;
     z-index: 3;
-    width: 180px;
+    width: 11.5vw;
 }
 
 .stone-big {
@@ -194,7 +194,7 @@ position: relative;
     top:55%;
     left: 4%;
     z-index: 5;
-    width: 170px;
+    width: 12vw;
 }
 
 .stone-big-2 {
@@ -202,7 +202,7 @@ position: relative;
     top:59%;
     right: 17%;
     z-index: 5;
-    width: 110px;
+    width: 7vw;
 }
 
 .stone-small {
@@ -210,7 +210,7 @@ position: relative;
     top:57%;
     left: 27%;
     z-index: 5;
-    width: 100px;
+    width: 6vw;
 }
 
 .stone-small-2 {
@@ -218,7 +218,7 @@ position: relative;
     top:57%;
     right: 23%;
     z-index: 5;
-    width: 70px;
+    width: 5vw;
 }
 
 
@@ -227,7 +227,7 @@ position: relative;
     top:55%;
     right: 32%;
     z-index: 5;
-    width: 45px;
+    width: 3vw;
 }
 
 .blue-ring {
@@ -235,7 +235,7 @@ position: relative;
     top:80%;
     right: 25%;
     z-index: 5;
-    width: 45px;
+    width: 2.5vw;
 }
 
 .blue-shell-small {
@@ -243,7 +243,7 @@ position: relative;
     top:70%;
     right: 10%;
     z-index: 5;
-    width: 30px;
+    width: 2vw;
 }
 
 .pink-shell-cone {
@@ -251,7 +251,7 @@ position: relative;
     top: 90%;
     right: 13%;
     z-index: 5;
-    width: 40px;
+    width: 2vw;
 }
 
 .pink-ring {
@@ -259,7 +259,7 @@ position: relative;
     top:75%;
     left: 5%;
     z-index: 5;
-    width: 40px;
+    width: 2vw;
 }
 
 .blue-shell-big {
@@ -267,7 +267,7 @@ position: relative;
     top:65%;
     left: 15%;
     z-index: 5;
-    width: 55px;
+    width: 3vw;
 }
 
 .blue-shell-round {
@@ -275,7 +275,7 @@ position: relative;
     top:80%;
     right: 2%;
     z-index: 5;
-    width: 35px;
+    width: 3vw;
 }
 
 
@@ -285,7 +285,7 @@ position: relative;
     top:75%;
     left: 28%;
     z-index: 5;
-    width: 40px;
+    width: 2vw;
 }
 
 .aquarist {
@@ -293,7 +293,7 @@ position: relative;
     top: 31%;
     left: 43%;
     z-index: 6;
-    width: 180px;
+    width: 13vw;
 }
 
 .bobbel {
@@ -301,7 +301,7 @@ position: relative;
     top: 45%;
     right: 32%;
     z-index: 5;
-    width: 45px;
+    width: 4vw;
 }
 
 .bobbel-2 {
@@ -309,7 +309,7 @@ position: relative;
     top: 43%;
     right: 20%;
     z-index: 10;
-    width: 50px;
+    width: 4vw;
 }
 
 .nemo {
@@ -317,7 +317,7 @@ position: relative;
     top:25%;
     left: 20%;
     z-index: 6;
-    width: 50px;
+    width: 4vw;
     animation: nemo 10s linear infinite;
 }
 
@@ -347,7 +347,7 @@ position: relative;
     top:55%;
     right: 18%;
     z-index: 10;
-    width: 70px;
+    width: 4vw;
     animation: crab 5s linear infinite;
 }
 @keyframes crab {
@@ -368,7 +368,7 @@ position: relative;
     top:15%;
     right: 10%;
     z-index: 6;
-    width: 70px;
+    width: 5vw;
     animation: purple-fish 10s linear infinite;
 }
 
@@ -398,7 +398,7 @@ position: relative;
     top:35%;
     right: 20%;
     z-index: 3;
-    width: 70px;
+    width: 4vw;
     animation: pink-blue-fish 18s linear infinite;
 }
 
@@ -434,7 +434,7 @@ position: relative;
     top:45%;
     left: 25%;
     z-index: 6;
-    width: 80px;
+    width: 4vw;
     animation: yellow-fish 10s linear infinite;
 }
 
@@ -464,7 +464,7 @@ position: relative;
     top:50%;
     right: 20%;
     z-index: 3;
-    width: 70px;
+    width: 5vw;
     animation: brown-fish 18s linear infinite;
 }
 
