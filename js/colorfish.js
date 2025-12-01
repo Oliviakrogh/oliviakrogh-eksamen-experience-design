@@ -56,6 +56,7 @@ const backButton = document.querySelector(".back-arrow");
 const paintSound = new Audio('audio/splat-sound.mp3');
 const starSound = new Audio('audio/twinkle-sound.mp3');
 const lastStarSound = new Audio('audio/last-star.mp3');
+const wonSound = new Audio('audio/won-sound.mp3');
 
 // Animationen af fisken der svømmer ind, starter efter siden er loadet
 document.addEventListener("DOMContentLoaded", () => {
@@ -282,18 +283,20 @@ let currentRound = 1;
 
 arrowButton.addEventListener("click", () => {
  if (currentRound === 4) {
+  wonSound.currentTime = 0;
+    wonSound.play(); 
   setTimeout(() => {
     lastStarSound.currentTime = 0;
     lastStarSound.play();
 
-    // Når lyden er færdig, vent 1 sekund og skift til forsiden
+    // Når lyden er færdig, vent 1,5 sekund og skift til forsiden
     lastStarSound.addEventListener("ended", () => {
       setTimeout(() => {
         window.location.href = "index.html";
       }, 1500); 
     }, { once: true });
 
-  }, 2100);
+  }, 2500);
 } else {
   playStarSound();
 }
