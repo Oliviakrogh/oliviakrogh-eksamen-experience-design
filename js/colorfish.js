@@ -52,6 +52,8 @@ const speechBobbel = document.querySelector(".speech-bobbel");
 const arrowButton = document.querySelector(".arrow");
 const backButton = document.querySelector(".back-arrow");
 
+// lyde
+const paintSound = new Audio('audio/splat-sound.mp3');
 
 
 // Animationen af fisken der svømmer ind, starter efter siden er loadet
@@ -139,10 +141,16 @@ function startRound4() {
   }, { once: true });
 }
 
+// funktion til at spille malelyden
+function playPaintSound() {
+  paintSound.currentTime = 0; 
+  paintSound.play();
+}
 
 // Runde 1
 //event listener for runde 1, når man klikker på orange knappen
 orangeButton.addEventListener("click", () => {
+  playPaintSound();
   if (orangeUsed.style.display === "block") {
     orangeUsed.style.display = "none";
     arrowButton.style.display = "none";
@@ -168,11 +176,13 @@ function checkAllButtonsClicked() {
 
 // Runde 2
 lightBlueButton.addEventListener("click", () => {
+  playPaintSound();
   lightBlueUsed.style.display = lightBlueUsed.style.display === "block" ? "none" : "block";
   checkRound2Buttons();
 });
 
 darkBlueButton.addEventListener("click", () => {
+  playPaintSound();
   darkBlueUsed.style.display = darkBlueUsed.style.display === "block" ? "none" : "block";
   checkRound2Buttons();
 });
@@ -193,16 +203,19 @@ function checkRound2Buttons() {
 
 // Runde 3
 pinkButton.addEventListener("click", () => {
+  playPaintSound();
   pinkUsed.style.display = pinkUsed.style.display === "block" ? "none" : "block";
   checkRound3Buttons();
 });
 
 blueButton.addEventListener("click", () => {
+  playPaintSound();
   blueUsed.style.display = blueUsed.style.display === "block" ? "none" : "block";
   checkRound3Buttons();
 });
 
 darkPinkButton.addEventListener("click", () => {
+  playPaintSound();
   darkPinkUsed.style.display = darkPinkUsed.style.display === "block" ? "none" : "block";
   checkRound3Buttons();
 });
@@ -220,21 +233,25 @@ function checkRound3Buttons() {
 
 // Runde 4
 lightPurpleButton.addEventListener("click", () => {
+  playPaintSound();
   lightPurpleUsed.style.display = lightPurpleUsed.style.display === "block" ? "none" : "block";
   checkRound4Buttons();
 });
 
 mediumLightButton.addEventListener("click", () => {
+  playPaintSound();
   mediumLightUsed.style.display = mediumLightUsed.style.display === "block" ? "none" : "block";
   checkRound4Buttons();
 });
 
 mediumPurpleButton.addEventListener("click", () => {
+  playPaintSound();
   mediumPurpleUsed.style.display = mediumPurpleUsed.style.display === "block" ? "none" : "block";
   checkRound4Buttons();
 });
 
 darkPurpleButton.addEventListener("click", () => {
+  playPaintSound();
   darkPurpleUsed.style.display = darkPurpleUsed.style.display === "block" ? "none" : "block";
   checkRound4Buttons();
 });
