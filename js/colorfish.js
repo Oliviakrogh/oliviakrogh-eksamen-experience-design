@@ -290,7 +290,7 @@ arrowButton.addEventListener("click", () => {
     lastStarSound.addEventListener("ended", () => {
       setTimeout(() => {
         window.location.href = "index.html";
-      }, 1200); 
+      }, 1500); 
     }, { once: true });
 
   }, 2100);
@@ -350,27 +350,31 @@ arrowButton.addEventListener("click", () => {
     mediumPurpleUsed.classList.add("move-right");
     darkPurpleUsed.classList.add("move-right");
     fourthFish.addEventListener("animationend", () => {
-    fourthFish.classList.remove("move-right");
-    lightPurpleUsed.classList.remove("move-right");
-    mediumLightUsed.classList.remove("move-right");
-    mediumPurpleUsed.classList.remove("move-right");
-    darkPurpleUsed.classList.remove("move-right");
-    [yellowStar1, yellowStar2, yellowStar3, yellowStar4].forEach(star => {
-  star.classList.add("final-stars");
-  document.body.appendChild(star); 
-  star.style.display = "block";
-  aquarist.style.display = "block";
-});
+        fourthFish.classList.remove("move-right");
+        lightPurpleUsed.classList.remove("move-right");
+        mediumLightUsed.classList.remove("move-right");
+        mediumPurpleUsed.classList.remove("move-right");
+        darkPurpleUsed.classList.remove("move-right");
 
-    hideAllRounds();
-    arrowButton.style.display = "none";
+        // Skjul alle plain stars, ellers blev de i toppen
+        [plainStar1, plainStar2, plainStar3, plainStar4].forEach(star => {
+            star.style.display = "none";
+        });
 
-    aquarist.style.display = "block";
+        [yellowStar1, yellowStar2, yellowStar3, yellowStar4].forEach(star => {
+            star.classList.add("final-stars");
+            document.body.appendChild(star); 
+            star.style.display = "block";
+        });
 
-    setTimeout(() => {
-  speechBobbel.style.display = "block";
-}, 1000);
-  }, { once: true });
+        aquarist.style.display = "block";
+        hideAllRounds();
+        arrowButton.style.display = "none";
+
+        setTimeout(() => {
+            speechBobbel.style.display = "block";
+        }, 1000);
+    }, { once: true });
 }
 });
 
