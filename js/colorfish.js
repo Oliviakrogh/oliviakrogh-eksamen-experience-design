@@ -54,7 +54,8 @@ const backButton = document.querySelector(".back-arrow");
 
 // lyde
 const paintSound = new Audio('audio/splat-sound.mp3');
-
+const starSound = new Audio('audio/twinkle-sound.mp3');
+const lastStarSound = new Audio('audio/last-star.mp3');
 
 // Animationen af fisken der svømmer ind, starter efter siden er loadet
 document.addEventListener("DOMContentLoaded", () => {
@@ -145,6 +146,13 @@ function startRound4() {
 function playPaintSound() {
   paintSound.currentTime = 0; 
   paintSound.play();
+}
+
+function playStarSound() {
+  setTimeout(() => {
+    starSound.currentTime = 0; 
+    starSound.play();
+  }, 500);
 }
 
 // Runde 1
@@ -273,6 +281,22 @@ function checkRound4Buttons() {
 let currentRound = 1;
 
 arrowButton.addEventListener("click", () => {
+ if (currentRound === 4) {
+  setTimeout(() => {
+    lastStarSound.currentTime = 0;
+    lastStarSound.play();
+
+    // Når lyden er færdig, vent 1 sekund og skift til forsiden
+    lastStarSound.addEventListener("ended", () => {
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 1200); 
+    }, { once: true });
+
+  }, 2100);
+} else {
+  playStarSound();
+}
   arrowButton.style.display = "none";
 
   if (currentRound === 1) {
@@ -344,10 +368,10 @@ arrowButton.addEventListener("click", () => {
     aquarist.style.display = "block";
 
     setTimeout(() => {
-      speechBobbel.style.display = "block";
-    }, 1000);
-    }, { once: true });
-  }
+  speechBobbel.style.display = "block";
+}, 1000);
+  }, { once: true });
+}
 });
 
 
