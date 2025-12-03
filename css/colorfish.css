@@ -37,6 +37,7 @@
 
 .button-pressed {
   filter: brightness(85%);
+  transform: scale(0.95);
 }
 
 
