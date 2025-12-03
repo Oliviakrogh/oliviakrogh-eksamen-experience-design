@@ -155,6 +155,7 @@ function playPaintSound() {
   paintSound.play();
 }
 
+// funktion til at spille stjerne lyden med delay
 function playStarSound() {
   setTimeout(() => {
     starSound.currentTime = 0; 
@@ -163,7 +164,7 @@ function playStarSound() {
 }
 
 // Runde 1
-//event listener for runde 1, når man klikker på orange knappen
+//event listener for runde 1, når der klikkes ændres det farvede lag og lyden spilles
 orangeButton.addEventListener("click", () => {
   playPaintSound();
   if (orangeUsed.style.display === "block") {
@@ -174,20 +175,6 @@ orangeButton.addEventListener("click", () => {
     arrowButton.style.display = "block";
   }
 });
-
-//jeg laver en funktion som tjekker at alle paint knapper er tjekket af før min arrow knap bliver vist. 
-function checkAllButtonsClicked() {
-  const allVisible =
-    orangeUsed.style.display === "block" 
-
-  if (allVisible) {
-    arrowButton.style.display = "block";
-  } else {
-    arrowButton.style.display = "none";
-  }
-}
-
-
 
 // Runde 2
 lightBlueButton.addEventListener("click", () => {
@@ -282,13 +269,28 @@ function checkRound4Buttons() {
 }
 
 
+//jeg laver en funktion som tjekker at alle paint knapper er tjekket af før min arrow knap bliver vist. 
+function checkAllButtonsClicked() {
+  const allVisible =
+    orangeUsed.style.display === "block" 
+
+  if (allVisible) {
+    arrowButton.style.display = "block";
+  } else {
+    arrowButton.style.display = "none";
+  }
+}
+
+
 
 // hvis man klikker på arrowknappen, svømmer den færdig farvet fisk væk og næste runde starter
 // jeg bruger getComputedStyle fordi ellers ville min fisk uden farve ikke svømme ud af billdet. dette er fordi fish.style.display kigger efter inline styling og det er fisken uden farve ikke
-let currentRound = 1;
+
+
+let currentRound = 1; //variabel til at holde styr på den nuværende runde
 
 arrowButton.addEventListener("click", () => {
- if (currentRound === 4) {
+ if (currentRound === 4) { //tjekker for sidste runde, for der er spillet færdigt, og der skal den gører noget andet
   wonSound.currentTime = 0;
     wonSound.play(); 
   setTimeout(() => {
@@ -314,7 +316,7 @@ arrowButton.addEventListener("click", () => {
     firstFish.addEventListener("animationend", () => {
       firstFish.classList.remove("move-right");
       orangeUsed.classList.remove("move-right");
-      yellowStar1.classList.add("plain-star"); 
+      yellowStar1.classList.add("plain-star"); // når animationen er færdig, skift til gul stjerne
       yellowStar1.style.display = "block";
       plainStar1.replaceWith(yellowStar1);
       currentRound = 2;
@@ -328,7 +330,7 @@ arrowButton.addEventListener("click", () => {
       secondFish.classList.remove("move-right");
       lightBlueUsed.classList.remove("move-right");
       darkBlueUsed.classList.remove("move-right");
-      yellowStar2.classList.add("plain-star-2"); 
+      yellowStar2.classList.add("plain-star-2"); // når animationen er færdig, skift til gul stjerne
       yellowStar2.style.display = "block";
       plainStar2.replaceWith(yellowStar2);
       currentRound = 3;
@@ -345,7 +347,7 @@ arrowButton.addEventListener("click", () => {
       pinkUsed.classList.remove("move-right");
       blueUsed.classList.remove("move-right");
       darkPinkUsed.classList.remove("move-right");
-      yellowStar3.classList.add("plain-star-3"); 
+      yellowStar3.classList.add("plain-star-3"); // når animationen er færdig, skift til gul stjerne
       yellowStar3.style.display = "block";
       plainStar3.replaceWith(yellowStar3);
       currentRound = 4;
