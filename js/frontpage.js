@@ -9,6 +9,7 @@ const german = ["Willkommen", "Färbe den Fisch"];
 const title = document.querySelector("h1");
 const buttonText = document.querySelector(".button-text");
 
+
 //Den her sikre at når siden er loadet færdig, så kan man trykke på knappen til farvelæg fisken spillet og komme derind
 document.addEventListener("DOMContentLoaded", () => {
     const colorButton = document.querySelector(".color-fish");
@@ -35,10 +36,5 @@ englishButton.addEventListener("click", () => changeLanguage(english));
 germanButton.addEventListener("click", () => changeLanguage(german));
 
 
-const audio = new Audio('audio/background-music.mp3');
-audio.loop = true;
 
-// Start musikken på første brugerinteraktion
-document.body.addEventListener('click', () => {
-    audio.play();
-}, { once: true });
+

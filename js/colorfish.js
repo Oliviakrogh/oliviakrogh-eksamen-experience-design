@@ -58,6 +58,8 @@ const starSound = new Audio('audio/twinkle-sound.mp3');
 const lastStarSound = new Audio('audio/last-star.mp3');
 const wonSound = new Audio('audio/won-sound.mp3');
 
+
+
 // Animationen af fisken der svømmer ind, starter efter siden er loadet
 document.addEventListener("DOMContentLoaded", () => {
   firstFish.style.display = "block"; 
