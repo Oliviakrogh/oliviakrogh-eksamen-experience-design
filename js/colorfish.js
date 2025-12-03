@@ -60,9 +60,9 @@ const wonSound = new Audio('audio/won-sound.mp3');
 
 
 
-// Animationen af fisken der svømmer ind, starter efter siden er loadet
+// Animationen af fisken der svømmer ind, starter efter siden er loadet via eventlistener.
 document.addEventListener("DOMContentLoaded", () => {
-  firstFish.style.display = "block"; 
+  firstFish.style.display = "block";  // fisken er usynelig i css og gøres synlig her
   firstFish.classList.add("move-in"); 
 // animation fjernes så den ikke er låst
   firstFish.addEventListener("animationend", () => {
@@ -93,7 +93,7 @@ function hideAllRounds() {
 
 
 
-// laver function for hver runde, for at samle koden bedre
+// laver function for hver runde, og gør de rigtige elementer synlige
 function startRound1() {
   hideAllRounds();
   firstFish.style.display = "block";
@@ -105,6 +105,7 @@ function startRound1() {
   orangeUsed.style.display = "none";
 }
 
+// starter runde 2 og gør de rigtige elementer synlige
 function startRound2() {
   hideAllRounds();
   secondFish.style.display = "block";
@@ -116,6 +117,8 @@ function startRound2() {
   }, { once: true });
 }
 
+
+// starter runde 3 og gør de rigtige elementer synlige
 function startRound3() {
   hideAllRounds();
   thirdFish.style.display = "block";
@@ -130,6 +133,7 @@ function startRound3() {
   }, { once: true });
 }
 
+// starter runde 4 og gør de rigtige elementer synlige
 function startRound4() {
   hideAllRounds();
   fourthFish.style.display = "block";
