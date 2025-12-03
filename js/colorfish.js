@@ -44,8 +44,8 @@ const yellowStar2 = document.querySelector(".yellow-star-2");
 const yellowStar3 = document.querySelector(".yellow-star-3");
 const yellowStar4 = document.querySelector(".yellow-star-4");
 
+// Slutside
 const aquarist = document.querySelector(".aquarist");
-
 const speechBobbel = document.querySelector(".speech-bobbel");
 
 // arrow knapper
@@ -57,7 +57,16 @@ const paintSound = new Audio('audio/splat-sound.mp3');
 const starSound = new Audio('audio/twinkle-sound.mp3');
 const lastStarSound = new Audio('audio/last-star.mp3');
 const wonSound = new Audio('audio/won-sound.mp3');
+const backgroundMusic = new Audio('audio/background-music.mp4');
 
+// her tilføjer jeg baggrundsmusik til spillet
+document.addEventListener("DOMContentLoaded", () => {
+  backgroundMusic.volume = 0.5; 
+  backgroundMusic.loop = true;
+  backgroundMusic.play().catch(error => {
+    console.log("Autoplay was prevented:", err);    
+  }); 
+});
 
 
 // Animationen af fisken der svømmer ind, starter efter siden er loadet via eventlistener.
