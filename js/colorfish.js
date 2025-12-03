@@ -308,6 +308,7 @@ arrowButton.addEventListener("click", () => {
 } else {
   playStarSound();
 }
+
   arrowButton.style.display = "none";
 
   if (currentRound === 1) {
