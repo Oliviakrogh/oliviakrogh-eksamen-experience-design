@@ -167,25 +167,26 @@ function playStarSound() {
 //event listener for runde 1, når der klikkes ændres det farvede lag og lyden spilles
 orangeButton.addEventListener("click", () => {
   playPaintSound();
-  if (orangeUsed.style.display === "block") {
-    orangeUsed.style.display = "none";
-    arrowButton.style.display = "none";
-  } else {
-    orangeUsed.style.display = "block";
-    arrowButton.style.display = "block";
-  }
+
+  orangeUsed.style.display = orangeUsed.style.display === "block" ? "none" : "block";
+
+  orangeButton.classList.toggle("button-pressed");
+
+  checkAllButtonsClicked();
 });
 
 // Runde 2
 lightBlueButton.addEventListener("click", () => {
   playPaintSound();
   lightBlueUsed.style.display = lightBlueUsed.style.display === "block" ? "none" : "block";
+  lightBlueButton.classList.toggle("button-pressed");
   checkRound2Buttons();
 });
 
 darkBlueButton.addEventListener("click", () => {
   playPaintSound();
   darkBlueUsed.style.display = darkBlueUsed.style.display === "block" ? "none" : "block";
+  darkBlueButton.classList.toggle("button-pressed");
   checkRound2Buttons();
 });
 
@@ -207,18 +208,21 @@ function checkRound2Buttons() {
 pinkButton.addEventListener("click", () => {
   playPaintSound();
   pinkUsed.style.display = pinkUsed.style.display === "block" ? "none" : "block";
+  pinkButton.classList.toggle("button-pressed");
   checkRound3Buttons();
 });
 
 blueButton.addEventListener("click", () => {
   playPaintSound();
   blueUsed.style.display = blueUsed.style.display === "block" ? "none" : "block";
+  blueButton.classList.toggle("button-pressed");
   checkRound3Buttons();
 });
 
 darkPinkButton.addEventListener("click", () => {
   playPaintSound();
   darkPinkUsed.style.display = darkPinkUsed.style.display === "block" ? "none" : "block";
+  darkPinkButton.classList.toggle("button-pressed");
   checkRound3Buttons();
 });
 
@@ -237,24 +241,28 @@ function checkRound3Buttons() {
 lightPurpleButton.addEventListener("click", () => {
   playPaintSound();
   lightPurpleUsed.style.display = lightPurpleUsed.style.display === "block" ? "none" : "block";
+  lightPurpleButton.classList.toggle("button-pressed");
   checkRound4Buttons();
 });
 
 mediumLightButton.addEventListener("click", () => {
   playPaintSound();
   mediumLightUsed.style.display = mediumLightUsed.style.display === "block" ? "none" : "block";
+  mediumLightButton.classList.toggle("button-pressed");
   checkRound4Buttons();
 });
 
 mediumPurpleButton.addEventListener("click", () => {
   playPaintSound();
   mediumPurpleUsed.style.display = mediumPurpleUsed.style.display === "block" ? "none" : "block";
+  mediumPurpleButton.classList.toggle("button-pressed");
   checkRound4Buttons();
 });
 
 darkPurpleButton.addEventListener("click", () => {
   playPaintSound();
   darkPurpleUsed.style.display = darkPurpleUsed.style.display === "block" ? "none" : "block";
+  darkPurpleButton.classList.toggle("button-pressed");
   checkRound4Buttons();
 });
 

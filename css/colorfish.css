@@ -35,6 +35,9 @@
 }
 
 
+.button-pressed {
+  filter: brightness(85%);
+}
 
 
 /* Runde 1 buttons*/
