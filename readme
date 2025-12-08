@@ -1,0 +1,29 @@
+# generel: 
+# - jeg har flyttet alle CSS, JS, billede og lyd filer til deres respektive mapper. 
+# - jeg har ændret alle navne til engelsk så alt er ensartet.
+# - ændret hvis der har været store bogstaver til små bogstaver.
+
+
+
+# index.html:
+# - valideret kode og fikset fejlene 
+# - ændret link til colorfish.html til et <a></a> tag 
+# - tilføjet buttons til at ændre sprog
+# - tilføjet flere billeder til at pynte forsiden
+
+# frontpage.css:
+
+
+# frontpage.js:
+
+
+
+
+
+# colorfish.html:
+
+
+# colorfish.css:
+
+
+# colorfish.jd:
