@@ -34,13 +34,15 @@
   display: none;
 }
 
-
+/* når paint buttons bliver trykket på ændres det til denne stil */
 .button-pressed {
   filter: brightness(85%);
   transform: scale(0.95);
 }
 
 
+
+/* ---------------------------------------- */
 /* Runde 1 buttons*/
 .paint-buttons {
   display: flex;
@@ -89,8 +91,17 @@
   z-index: 10;
   display: none;
 }
+/* ---------------------------------------- */
 
 
+
+
+
+
+
+
+
+/* ---------------------------------------- */
 /* Runde 2 Buttons */
 .paint-buttons-2 {
   display: none;
@@ -151,8 +162,17 @@
   z-index: 12;
   display: none;
 }
+/* ---------------------------------------- */
 
 
+
+
+
+
+
+
+
+/* ---------------------------------------- */
 /* runde 3 Buttons */
 .paint-buttons-3 {
   display: none;
@@ -223,10 +243,15 @@
   z-index: 11;
   display: none;
 }
+/* ---------------------------------------- */
 
 
 
 
+
+
+
+/* ---------------------------------------- */
 /* Runde 4 Buttons */
 .paint-buttons-4 {
   justify-content: center;
@@ -313,6 +338,30 @@
 .dark-purple-used { 
   z-index: 13; 
   display: none; }
+/* ---------------------------------------- */
+
+
+
+
+
+
+
+/* ---------------------------------------- */
+/* animation til at de "plain" fisk skal svømme ind fra venstre */
+@keyframes moveInFromLeft {
+  0% {
+    transform: translateX(-150%) translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.move-in {
+  animation: moveInFromLeft 1s forwards;
+}
 
 
 
@@ -332,29 +381,16 @@
   animation: moveRight 1s forwards;
 }
 
-/* Utility */
+/* skjuler elementer */
 .hidden {
   display: none !important;
 }
-
-/* animation til at de "plain" fisk skal svømme ind fra venstre */
-@keyframes moveInFromLeft {
-  0% {
-    transform: translateX(-150%) translateY(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-50%) translateY(0);
-    opacity: 1;
-  }
-}
-
-.move-in {
-  animation: moveInFromLeft 1s forwards;
-}
+/* ---------------------------------------- */
 
 
 
+/* ---------------------------------------- */
+/* stjernerne */
 .stars {
   display: flex;
   justify-content: center;
@@ -383,6 +419,11 @@
   height: auto;
 }
 
+
+
+
+/* ---------------------------------------- */
+/* slutside */
 .final-stars {
   position: fixed; 
   top: 40%;
@@ -393,6 +434,7 @@
   animation: starsMove 1s forwards ease-out;
 }
 
+/* animation til den store stjerne på slutsiden */
 @keyframes starsMove {
   0% {
     transform: translate(-50%, -50%) scale(0);
@@ -467,8 +509,14 @@
     opacity: 1;
   }
 }
+/* ---------------------------------------- */
 
 
+
+
+
+
+/* ---------------------------------------- */
 /* Arrow når man er færdig */
 .arrow {
   position: relative;
@@ -503,6 +551,7 @@
   cursor: pointer;
   z-index: 20;
 }
+/* ---------------------------------------- */
 
 
 
@@ -510,8 +559,7 @@
 
 
 
-
-
+/* ---------------------------------------- */
 /* pynt i baggrunden */
 .purple-seaweed-big {
     position: absolute;
@@ -765,3 +813,4 @@
     transform: translate(0, 0) scaleX(-1) 
   }
 }
+/* ---------------------------------------- */

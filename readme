@@ -1,10 +1,21 @@
+# README - ændringer og opdateringer
+
+# ------------------------------
 # generel: 
+# ------------------------------
 # - jeg har flyttet alle CSS, JS, billede og lyd filer til deres respektive mapper. 
 # - jeg har ændret alle navne til engelsk så alt er ensartet.
 # - ændret hvis der har været store bogstaver til små bogstaver.
+# - udskriftet alle billeder med de nye opdateret billeder 
+# ------------------------------
 
 
 
+
+
+# ------------------------------
+# forsiden
+# ------------------------------
 # index.html:
 # - valideret kode og fikset fejlene 
 # - ændret link til colorfish.html til et <a></a> tag 
@@ -12,18 +23,55 @@
 # - tilføjet flere billeder til at pynte forsiden
 
 # frontpage.css:
+# - stylet alle nye elementer på forsiden (pynt)
+# - stylet sprog knapperne
 
 
 # frontpage.js:
+# - tilføjet funktionalitet til sprog knapperne
+# ------------------------------
 
 
 
 
 
+
+# ------------------------------
+# farvelæg fisken
+# ------------------------------
 # colorfish.html:
+# - ryddet op i koden og valideret
+# - organiseret mine farveknapper i containers så de opdelt i runder
+# - tilføjet ny blank baggrundsbillede 
+# - tilføjet billeder til pynt så jeg kunne style dem ind i stedet for bare at have 1 billede som baggrund
+# - organiseret mine billedeelementer i runder, slutside og pynt
 
 
 # colorfish.css:
+# - skjult alle de andre runder indtil de skal bruges
+# - stylet mine farveknapper så de skifter udseende når de er trykket ned
+# - stylet de nye runders paint buttons 
+# - stylet de nye runders fisk 
+# - oprettet en animation til fisken der svømmer ind på forsiden
+# - fikset animationen til fisken der svømmer væk igen så alle fiskens farver svømmer med
+# - oprettet en animation til den store stjerne på slutsiden
+# - oprettet en animation til akvariemanden til slutsiden
+# - oprettet en animation til taleboblen til slutsiden
+# - stylet pynt billederne så de passer ind i baggrunden
+
 
 
 # colorfish.jd:
+# - hentet alle mine nye knapper, farvelag, stjerner, pilknapper og lyde til variabler
+# - tilføjet min baggrunds musik og sat den til at starte når siden er loadet
+# - tilføjet lydeeffekter til mine farveknapper + stjernelyde og vinderlyden på de rigtige tidspunkter i spillet
+# - fået animationen til fisken der svømmer ind på siden til at virke
+# - fået animationen til fisken der svømmer væk igen til at virke
+# - skult runderne med hideAllRounds() indtil funktionerne der viser startRound1(), showRound2() osv. bliver kaldt
+# - når en farveknap bliver trykket ned, bliver knappen ændret og den tilsvarende fisk bliver farvet 
+# - når alle fisk i en runde er farvet, bliver pil knappen til næste runde vist, og når den bliver trykket, svømmer fisken ud.
+# - stjerner ændres til gule efter arrowpilet er trykket på
+# - når alle runder er færdige, bliver slutsiden vist med animationer og lydeffekter
+# - efter lidt tid bliver brugeren sendt tilbage til forsiden
+
+# ------------------------------
