@@ -14,7 +14,7 @@ const danishButton = document.querySelector(".danish");
 const englishButton = document.querySelector(".english");
 const germanButton = document.querySelector(".german");
 
-// her laver jeg en funkton til at ændre sproget på siden, først skifter den titlen og så knappens tekst
+//her laver jeg en funkton til at ændre sproget på siden, først skifter den titlen og så knappens tekst
 function changeLanguage(languageArray) {
     title.textContent = languageArray[0];
     buttonText.textContent = languageArray[1];

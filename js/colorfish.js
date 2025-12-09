@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   backgroundMusic.volume = 0.5; 
   backgroundMusic.loop = true;
   backgroundMusic.play().catch(error => {
-    console.log("Autoplay was prevented:", err);    
+    console.log("Autoplay was prevented:", err);
   }); 
 });
 
@@ -160,7 +160,7 @@ function startRound4() {
 
 // funktion til at spille malelyden
 function playPaintSound() {
-  paintSound.currentTime = 0; 
+  paintSound.currentTime = 0; //her spiller den lyden om igen hvis knappen bliver trykket igen (altså spiller den ikke lyden færdig)
   paintSound.play();
 }
 
@@ -385,14 +385,14 @@ arrowButton.addEventListener("click", () => {
         mediumPurpleUsed.classList.remove("move-right");
         darkPurpleUsed.classList.remove("move-right");
 
-        // Skjul alle plain stars, ellers blev de i toppen
+        // Skjuler alle plain stars, ellers blev de i toppen
         [plainStar1, plainStar2, plainStar3, plainStar4].forEach(star => {
             star.style.display = "none";
         });
 
         [yellowStar1, yellowStar2, yellowStar3, yellowStar4].forEach(star => {
             star.classList.add("final-stars");
-            document.body.appendChild(star); 
+            document.body.appendChild(star); //Gør så finale stjernen vises på toppen af siden, uanset den html struktur jeg havde før.
             star.style.display = "block";
         });
 
